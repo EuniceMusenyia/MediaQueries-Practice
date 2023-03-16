@@ -1,0 +1,79 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+h1,
+h2,
+h3{
+    line-height: 1;
+    font-weight: 900;
+}
+.bg-light{
+    background-color: blanchedalmond;
+
+}
+.bg-dark{
+    background-color: black;
+    color: white;
+
+}
+.bg-accent{
+    color: white;
+    background-color: burlywood;
+}
+.bg-dark h2{
+    color: blueviolet;
+}
+.bg-accent h2{
+    color: blueviolet;
+}
+header,
+section{
+    /* margin: 3% 0%; */
+    padding: 3rem 0;
+}
+.container{
+    margin-inline: auto;
+    width: min (900% 70.6rem);
+}
+.text-center{
+    text-align: center;
+}
+h2,
+h3,
+p{
+    margin-bottom: 1em;
+}
+/* .container{
+    margin-inline: auto;
+    width: min (90%, 70rem);
+} */
+img{
+    display: block;
+    max-width: 265px;
+}
+.split{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 40em){
+    .split{
+        flex-direction: row;
+     }
+    .split > * {
+        flex-basis: 100%;
+    }
+    .split > * *{
+        margin-left: 3%;
+    }
+}
+@media(min-width: 40px){
+    header,
+section{
+    /* margin: 3% 0%; */
+    padding: 7rem 0;
+}
+}
